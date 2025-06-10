@@ -14,7 +14,7 @@ function fetchData(CityName) {
   const apiKey = "5d0df7fb6dba415f8fb03442250706";
 
   axios
-    .get(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${CityName}`)
+    .get(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${CityName}`)
     .then(function (response) {
       const { location, current } = response.data;
       updateDOM(location, current);
