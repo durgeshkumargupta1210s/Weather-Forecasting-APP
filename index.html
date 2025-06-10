@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weather Forecasting App</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> -->
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="left-info">
+        <div class="time-display" id="timeDisplay">--:-- AM</div>
+        <div class="greeting">Hello, Durgesh!<br>Good Morning!</div>
+      </div>
+
+      <div class="weather-circle">
+        <div class="temp">--°C</div>
+        <div class="icon">☀️</div>
+      </div>
+    </div>
+
+    <div class="weather-info">
+      <div class="info-box">📍 <span id="cityName">City</span></div>
+      <div class="info-box">💧 Humidity: <span id="humidity">--%</span></div>
+      <div class="info-box">☀️ Condition: <span id="condition">--</span></div>
+    </div>
+
+    <h1>Weather Forecasting App</h1>
+
+    <div class="input-container">
+      <input type="text" placeholder="Enter Your City Name" />
+      <button>Get Weather</button>
+    </div>
+
+    <div id="weatherResult" class="result"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

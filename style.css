@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f0f;
+  font-family: 'Orbitron', sans-serif;
+  color: cyan;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.left-info {
+  color: cyan;
+  font-size: 20px;
+  text-align: left;
+}
+
+.time-display {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.greeting {
+  font-size: 18px;
+}
+
+.weather-circle {
+  background: #1f1f1f;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px cyan, 0 0 25px cyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: cyan;
+  margin-top: 20px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  background: #1a1a1a;
+  padding: 15px 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #00ffff44;
+  color: cyan;
+  font-size: 18px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+input {
+  width: 90%;
+  max-width: 450px;
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #1f1f1f;
+  border: none;
+  border-radius: 30px;
+  color: cyan;
+  box-shadow: 0 0 10px cyan, 0 0 20px #00ffff;
+  outline: none;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  color: #0f0f0f;
+  background-color: cyan;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
+
+button:hover {
+  background-color: #00e5e5;
+  box-shadow: 0 0 15px #00ffff, 0 0 30px cyan;
+}
+
+#weatherResult {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #000;
+}
+
+.weather-row {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 0 10px #000, 0 0 20px #00ffff22;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+  color: cyan;
+}
